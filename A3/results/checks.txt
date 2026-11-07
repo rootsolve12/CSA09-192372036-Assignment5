@@ -1,0 +1,3 @@
+PASS: Generic DAO insert and find
+PASS: Generic DAO update and findAll
+PASS: Generic DAO delete and missing ID

@@ -1,0 +1,4 @@
+Compiler: java -m jdk.compiler/com.sun.tools.javac.Main -g
+Task sources: A3/Dao.java, A3/Student.java, A3/StudentDao.java
+All shared dependencies compiled into build/common
+Exit=0
