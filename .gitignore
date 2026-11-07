@@ -1,0 +1,6 @@
+build/
+deps/
+generated/
+*.class
+*.log
+__pycache__/

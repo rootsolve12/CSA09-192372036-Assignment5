@@ -1,0 +1,3 @@
+Text record: P1001|192372036|Roy \| Hitesh \\ A|12|Main Gate|2027-03-31|4500.00|26df9c5d
+PASS: Escaped delimiter and backslash round trip
+PASS: Binary DataOutputStream layout round trip
