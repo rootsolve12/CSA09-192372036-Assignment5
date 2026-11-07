@@ -1,0 +1,4 @@
+Compiler: java -m jdk.compiler/com.sun.tools.javac.Main -g
+Task sources: B4/Migration.java, B4/MigrationScale.java
+All shared dependencies compiled into build/common
+Exit=0

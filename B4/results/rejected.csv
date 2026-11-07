@@ -1,0 +1,4 @@
+line,reason,raw
+2,"Expected seven fields","P2001|too|few|3d7f3ae2"
+3,"Invalid field: Character N is neither a decimal digit number, decimal point, nor ""e"" notation exponential mark.","P2002|192372002|Damaged Amount|12|Main Gate|2027-03-31|NaN|9a1efe72"
+4,"Missing checksum",""

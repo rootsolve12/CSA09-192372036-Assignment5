@@ -1,0 +1,18 @@
+$ java Migration
+Migration imported=2 rejected=3
+PASS: Migration commits all valid rows and reports every invalid row
+PASS: Migration preserves boarding stop and validity date
+Second import duplicate: transaction rejected code=1062
+PASS: Failed repeat import leaves existing rows unchanged
+DATABASE MySQL 8.4.13
+DRIVER MySQL Connector/J mysql-connector-j-9.5.0 (Revision: a7b3c94f50efbddb9f0dd69b3e0d1aaa25305cd6)
+TRANSACTIONS supported=true isolation=4
+TABLE bus_pass
+TABLE student
+TABLE users
+TABLE wallet
+
+
+$ java MigrationScale
+PASS: Streaming migration imports 100000 full seven-field records in one transaction
+Migration scale rows=100000 rejected=0 ms=4906.136066

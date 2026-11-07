@@ -1,0 +1,2 @@
+PASS: Streaming migration imports 100000 full seven-field records in one transaction
+Migration scale rows=100000 rejected=0 ms=4906.136066
