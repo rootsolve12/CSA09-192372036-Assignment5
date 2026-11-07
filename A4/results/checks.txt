@@ -1,0 +1,12 @@
+VERSION v1 MODE write EXIT 0
+PASS: Version 1 graph saved
+VERSION v1 MODE read EXIT 0
+PASS: transient password and connection are null; shared resident identity preserved
+PASS: Version 1 graph restored
+VERSION v2 MODE read EXIT 0
+PASS: transient password and connection are null; shared resident identity preserved
+PASS: added phone defaults to null with stable serialVersionUID
+PASS: Old graph read with added phone and stable UID
+VERSION incompatible MODE read EXIT 1
+PASS: Changed UID produces InvalidClassException
+PASS: Incompatible UID rejected

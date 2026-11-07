@@ -1,0 +1,50 @@
+$ java SerializationChecks
+VERSION v1 MODE write EXIT 0
+Saved graph bytes=348 rooms=2 sharedResidents=1
+PASS: Version 1 graph saved
+VERSION v1 MODE read EXIT 0
+PASS: transient password and connection are null; shared resident identity preserved
+PASS: Version 1 graph restored
+VERSION v2 MODE read EXIT 0
+PASS: transient password and connection are null; shared resident identity preserved
+PASS: added phone defaults to null with stable serialVersionUID
+PASS: Old graph read with added phone and stable UID
+VERSION incompatible MODE read EXIT 1
+Exception in thread "main" java.io.InvalidClassException: HostelDemo$Resident; local class incompatible: stream classdesc serialVersionUID = 1, local class serialVersionUID = 2
+	at java.base/java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:598)
+	at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2078)
+	at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498)
+	at java.base/java.util.ArrayList.readObject(ArrayList.java:981)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1102)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2444)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2618)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2469)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498)
+	at java.base/java.util.ArrayList.readObject(ArrayList.java:981)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1102)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2444)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2618)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2469)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498)
+	at HostelDemo.main(HostelDemo.java:22)
+PASS: Changed UID produces InvalidClassException
+PASS: Incompatible UID rejected
+
