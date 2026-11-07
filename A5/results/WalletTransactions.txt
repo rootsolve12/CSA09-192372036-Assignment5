@@ -1,0 +1,7 @@
+Injected failure after debit
+Transaction failure: 1000.00,100.00 total=1100.00
+PASS: Failure rolls back debit
+Transaction success: 500.00,600.00 total=1100.00
+PASS: Successful transfer preserves money
+Independent auto-commit failure: 500.00,100.00 total=600.00
+PASS: Unsafe alternative loses 500 between commits
