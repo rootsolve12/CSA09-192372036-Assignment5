@@ -1,0 +1,8 @@
+PASS: Valid local fixture login
+PASS: Ordinary wrong password rejected
+PASS: Unsafe concatenation bypassed; parameterized query rejects same input
+REJECT line=2 Expected seven fields
+REJECT line=3 Invalid field: Character N is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+REJECT line=4 Missing checksum
+PASS: Wrong field count, nonnumeric amount and blank line rejected; two valid records retained
+PASS: Damaged rows do not stop later valid lookup

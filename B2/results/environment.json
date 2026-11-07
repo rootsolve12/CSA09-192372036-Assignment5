@@ -1,0 +1,9 @@
+{
+  "task": "B2",
+  "java": "openjdk version \"21.0.13\" 2026-10-20\nOpenJDK Runtime Environment (build 21.0.13+9-1-deb13u2-Debian)\nOpenJDK 64-Bit Server VM (build 21.0.13+9-1-deb13u2-Debian, mixed mode, sharing)\n",
+  "utc": "2026-11-07T14:53:58.620239+00:00",
+  "origin": "workspace",
+  "jdbc": "MySQL Connector/J 9.5.0; dedicated assignment5 database",
+  "heap": "128 MiB initial, 512 MiB max",
+  "run_command": "python tools/run.py B2"
+}
