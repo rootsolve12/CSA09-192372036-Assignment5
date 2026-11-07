@@ -1,0 +1,139 @@
+PASS: Statement inserts ten records
+COLUMN 1 pass_id VARCHAR JDBC=12
+COLUMN 2 reg_no CHAR JDBC=1
+COLUMN 3 name VARCHAR JDBC=12
+COLUMN 4 route_no INT JDBC=4
+COLUMN 5 boarding_stop VARCHAR JDBC=12
+COLUMN 6 validity_date DATE JDBC=91
+COLUMN 7 amount DECIMAL JDBC=3
+PASS: Selected typed values row 1
+PASS: Selected typed values row 2
+PASS: Selected typed values row 3
+PASS: Selected typed values row 4
+PASS: Selected typed values row 5
+PASS: Selected typed values row 6
+PASS: Selected typed values row 7
+PASS: Selected typed values row 8
+PASS: Selected typed values row 9
+PASS: Selected typed values row 10
+PASS: SELECT contains ten records
+PASS: Prepared inserts ten records
+COLUMN 1 pass_id VARCHAR JDBC=12
+COLUMN 2 reg_no CHAR JDBC=1
+COLUMN 3 name VARCHAR JDBC=12
+COLUMN 4 route_no INT JDBC=4
+COLUMN 5 boarding_stop VARCHAR JDBC=12
+COLUMN 6 validity_date DATE JDBC=91
+COLUMN 7 amount DECIMAL JDBC=3
+PASS: Selected typed values row 1
+PASS: Selected typed values row 2
+PASS: Selected typed values row 3
+PASS: Selected typed values row 4
+PASS: Selected typed values row 5
+PASS: Selected typed values row 6
+PASS: Selected typed values row 7
+PASS: Selected typed values row 8
+PASS: Selected typed values row 9
+PASS: Selected typed values row 10
+PASS: SELECT contains ten records
+PASS: Batch inserts ten records
+COLUMN 1 pass_id VARCHAR JDBC=12
+COLUMN 2 reg_no CHAR JDBC=1
+COLUMN 3 name VARCHAR JDBC=12
+COLUMN 4 route_no INT JDBC=4
+COLUMN 5 boarding_stop VARCHAR JDBC=12
+COLUMN 6 validity_date DATE JDBC=91
+COLUMN 7 amount DECIMAL JDBC=3
+PASS: Selected typed values row 1
+PASS: Selected typed values row 2
+PASS: Selected typed values row 3
+PASS: Selected typed values row 4
+PASS: Selected typed values row 5
+PASS: Selected typed values row 6
+PASS: Selected typed values row 7
+PASS: Selected typed values row 8
+PASS: Selected typed values row 9
+PASS: Selected typed values row 10
+PASS: SELECT contains ten records
+PASS: Measured Statement 1000 rows exact
+MEASURE 1000 Statement tx run=1 ms=384.093932
+PASS: Measured Statement 1000 rows exact
+MEASURE 1000 Statement tx run=2 ms=298.986247
+PASS: Measured Statement 1000 rows exact
+MEASURE 1000 Statement tx run=3 ms=271.654501
+PASS: Measured Prepared 1000 rows exact
+MEASURE 1000 Prepared tx run=1 ms=258.406942
+PASS: Measured Prepared 1000 rows exact
+MEASURE 1000 Prepared tx run=2 ms=288.954699
+PASS: Measured Prepared 1000 rows exact
+MEASURE 1000 Prepared tx run=3 ms=248.64829
+PASS: Measured Batch 1000 rows exact
+MEASURE 1000 Batch tx run=1 ms=66.379304
+PASS: Measured Batch 1000 rows exact
+MEASURE 1000 Batch tx run=2 ms=72.641343
+PASS: Measured Batch 1000 rows exact
+MEASURE 1000 Batch tx run=3 ms=44.625395
+PASS: Auto-commit batch count 1000
+PASS: Auto-commit batch count 1000
+PASS: Auto-commit batch count 1000
+PASS: Supplied PassLoader loads 1000
+PASS: PassLoader restores auto-commit
+PASS: Supplied loader committed exact count 1000
+PASS: Measured Statement 10000 rows exact
+MEASURE 10000 Statement tx run=1 ms=2268.672425
+PASS: Measured Statement 10000 rows exact
+MEASURE 10000 Statement tx run=2 ms=2141.298326
+PASS: Measured Statement 10000 rows exact
+MEASURE 10000 Statement tx run=3 ms=2078.626557
+PASS: Measured Prepared 10000 rows exact
+MEASURE 10000 Prepared tx run=1 ms=1734.630513
+PASS: Measured Prepared 10000 rows exact
+MEASURE 10000 Prepared tx run=2 ms=1778.363003
+PASS: Measured Prepared 10000 rows exact
+MEASURE 10000 Prepared tx run=3 ms=1622.945618
+PASS: Measured Batch 10000 rows exact
+MEASURE 10000 Batch tx run=1 ms=355.709597
+PASS: Measured Batch 10000 rows exact
+MEASURE 10000 Batch tx run=2 ms=312.358095
+PASS: Measured Batch 10000 rows exact
+MEASURE 10000 Batch tx run=3 ms=346.111278
+PASS: Auto-commit batch count 10000
+PASS: Auto-commit batch count 10000
+PASS: Auto-commit batch count 10000
+PASS: Supplied PassLoader loads 10000
+PASS: PassLoader restores auto-commit
+PASS: Supplied loader committed exact count 10000
+PASS: Measured Statement 100000 rows exact
+MEASURE 100000 Statement tx run=1 ms=21355.349019
+PASS: Measured Statement 100000 rows exact
+MEASURE 100000 Statement tx run=2 ms=19840.560416
+PASS: Measured Statement 100000 rows exact
+MEASURE 100000 Statement tx run=3 ms=19476.31616
+PASS: Measured Prepared 100000 rows exact
+MEASURE 100000 Prepared tx run=1 ms=17118.572449
+PASS: Measured Prepared 100000 rows exact
+MEASURE 100000 Prepared tx run=2 ms=17497.576761
+PASS: Measured Prepared 100000 rows exact
+MEASURE 100000 Prepared tx run=3 ms=18267.871225
+PASS: Measured Batch 100000 rows exact
+MEASURE 100000 Batch tx run=1 ms=3395.386467
+PASS: Measured Batch 100000 rows exact
+MEASURE 100000 Batch tx run=2 ms=3002.364266
+PASS: Measured Batch 100000 rows exact
+MEASURE 100000 Batch tx run=3 ms=3077.315245
+PASS: Auto-commit batch count 100000
+PASS: Auto-commit batch count 100000
+PASS: Auto-commit batch count 100000
+PASS: Supplied PassLoader loads 100000
+PASS: PassLoader restores auto-commit
+PASS: Supplied loader committed exact count 100000
+Injected numeric failure auto=true
+AFTER FAILURE auto=true rows=5000
+PASS: Expected partial versus rolled-back rows
+Injected numeric failure auto=false
+AFTER FAILURE auto=false rows=0
+PASS: Expected partial versus rolled-back rows
+PASS: Failed supplied loader restores auto-commit
+PASS: Invalid amount halfway leaves zero supplied-loader rows
+Injected duplicate SQL code=1062
+PASS: SQL batch failure also rolls back every row

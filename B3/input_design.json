@@ -1,0 +1,23 @@
+{
+  "task": "B3",
+  "scope": "local synthetic assignment fixtures only",
+  "line_counter_decimal_bytes": [
+    1000000,
+    10000000,
+    50000000
+  ],
+  "growth_records": [
+    1000,
+    10000,
+    100000
+  ],
+  "jdbc_rows": [
+    10,
+    1000,
+    10000,
+    100000
+  ],
+  "batch_size": 1000,
+  "failure_index_zero_based": 5000,
+  "jdbc_failure_rows": 10000
+}

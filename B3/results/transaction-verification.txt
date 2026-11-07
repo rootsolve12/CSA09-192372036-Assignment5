@@ -1,0 +1,10 @@
+Injected numeric failure auto=true
+AFTER FAILURE auto=true rows=5000
+PASS: Expected partial versus rolled-back rows
+Injected numeric failure auto=false
+AFTER FAILURE auto=false rows=0
+PASS: Expected partial versus rolled-back rows
+PASS: Failed supplied loader restores auto-commit
+PASS: Invalid amount halfway leaves zero supplied-loader rows
+Injected duplicate SQL code=1062
+PASS: SQL batch failure also rolls back every row
