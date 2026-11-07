@@ -1,0 +1,7 @@
+$ java LineCounter
+50 decimal MB: single-byte read calls=50000001; 64KiB block calls=764
+PASS: Both counters agree for 0 bytes, lines=0
+PASS: Both counters agree for 2 bytes, lines=1
+PASS: Both counters agree for 3 bytes, lines=2
+PASS: Both counters agree for 5 bytes, lines=2
+

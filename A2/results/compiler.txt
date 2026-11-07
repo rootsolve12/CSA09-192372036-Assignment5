@@ -1,0 +1,4 @@
+Compiler: java -m jdk.compiler/com.sun.tools.javac.Main -g
+Task sources: A2/LineCounter.java
+All shared dependencies compiled into build/common
+Exit=0
