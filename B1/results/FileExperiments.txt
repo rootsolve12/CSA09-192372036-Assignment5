@@ -1,0 +1,28 @@
+PASS: Missing file is an empty store
+PASS: Add and find exact record
+PASS: Unknown pass ID returns empty
+PASS: List by route selects correct pass
+PASS: duplicate pass ID rejected
+PASS: Newline isolates incomplete tail before next append
+PASS: Damaged tail reported and valid following record remains searchable
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 100000 records
+PASS: Find final pass among 100000 records
+PASS: Find final pass among 100000 records
+records,run,elapsed_ns,found
+1000,1,39312209,true
+1000,2,29536403,true
+1000,3,54056310,true
+10000,1,86384509,true
+10000,2,49956190,true
+10000,3,38752609,true
+100000,1,279739360,true
+100000,2,290270514,true
+100000,3,294713998,true
+PASS: Twenty indexed lookups returned exact IDs
+Index build_ns=474880291 entries=100000 20 lookup_ns=595822

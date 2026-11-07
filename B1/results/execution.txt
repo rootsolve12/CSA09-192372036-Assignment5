@@ -1,0 +1,72 @@
+$ java PassStore
+[P1003, 192311003, Divya, 7, 3800.0]
+null
+
+$ java FileExperiments
+PASS: Missing file is an empty store
+PASS: Add and find exact record
+PASS: Unknown pass ID returns empty
+PASS: List by route selects correct pass
+PASS: duplicate pass ID rejected
+PASS: Newline isolates incomplete tail before next append
+PASS: Damaged tail reported and valid following record remains searchable
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 1000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 10000 records
+PASS: Find final pass among 100000 records
+PASS: Find final pass among 100000 records
+PASS: Find final pass among 100000 records
+records,run,elapsed_ns,found
+1000,1,39312209,true
+1000,2,29536403,true
+1000,3,54056310,true
+10000,1,86384509,true
+10000,2,49956190,true
+10000,3,38752609,true
+100000,1,279739360,true
+100000,2,290270514,true
+100000,3,294713998,true
+PASS: Twenty indexed lookups returned exact IDs
+Index build_ns=474880291 entries=100000 20 lookup_ns=595822
+
+$ java BufferExperiments
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=1 ms=397.273298 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=1 ms=1.9707 calls=17
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=2 ms=403.304792 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=2 ms=1.425364 calls=17
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=3 ms=331.893751 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=3 ms=0.655364 calls=17
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=1 ms=2618.498258 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=1 ms=4.431063 calls=154
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=2 ms=3210.126593 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=2 ms=6.380603 calls=154
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=3 ms=3672.822057 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=3 ms=4.990696 calls=154
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=1 ms=17036.168472 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=1 ms=25.505924 calls=764
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=2 ms=16988.036374 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=2 ms=25.858683 calls=764
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=3 ms=16669.456147 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=3 ms=39.316989 calls=764
+

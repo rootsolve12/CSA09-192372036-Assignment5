@@ -1,0 +1,4 @@
+Compiler: java -m jdk.compiler/com.sun.tools.javac.Main -g
+Task sources: B1/BusPass.java, B1/FileExperiments.java, B1/PassStore.java, B1/BufferExperiments.java, B1/BusPassStore.java, B1/PassCodec.java
+All shared dependencies compiled into build/common
+Exit=0

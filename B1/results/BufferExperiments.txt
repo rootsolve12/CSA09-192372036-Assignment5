@@ -1,0 +1,36 @@
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=1 ms=397.273298 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=1 ms=1.9707 calls=17
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=2 ms=403.304792 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=2 ms=1.425364 calls=17
+PASS: Exact line count 1000000 bytes buffered=false
+MEASURE bytes=1000000 buffered=false run=3 ms=331.893751 calls=1000001
+PASS: Exact line count 1000000 bytes buffered=true
+MEASURE bytes=1000000 buffered=true run=3 ms=0.655364 calls=17
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=1 ms=2618.498258 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=1 ms=4.431063 calls=154
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=2 ms=3210.126593 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=2 ms=6.380603 calls=154
+PASS: Exact line count 10000000 bytes buffered=false
+MEASURE bytes=10000000 buffered=false run=3 ms=3672.822057 calls=10000001
+PASS: Exact line count 10000000 bytes buffered=true
+MEASURE bytes=10000000 buffered=true run=3 ms=4.990696 calls=154
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=1 ms=17036.168472 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=1 ms=25.505924 calls=764
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=2 ms=16988.036374 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=2 ms=25.858683 calls=764
+PASS: Exact line count 50000000 bytes buffered=false
+MEASURE bytes=50000000 buffered=false run=3 ms=16669.456147 calls=50000001
+PASS: Exact line count 50000000 bytes buffered=true
+MEASURE bytes=50000000 buffered=true run=3 ms=39.316989 calls=764
